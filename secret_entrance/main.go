@@ -62,7 +62,6 @@ func processRotation(startPos int, clicks int, direction byte) (int, int) {
 			count++
 		}
 
-		// Calculate new position (handle negative wrapping)
 		startPos = (startPos - remainder) % 100
 		if startPos < 0 {
 			startPos += 100
